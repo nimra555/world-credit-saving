@@ -9,7 +9,8 @@
     font-family: "Avenir-Font" ;
 }
 body{
-    background-image: linear-gradient(#99cffe,#6b5959);
+    /* background-image: linear-gradient(#99cffe,#6b5959); */
+    background-image: url("../assets/other-images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -39,7 +40,11 @@ body{
     margin-top: 180px;
     color: white;
     font-size: 10px;
-    /* align-self: baseline; */
+}
+@media screen and (max-width: 425px){
+    .container p{
+        font-size: 7px;
+    }
 }
 .container button{
     align-self: flex-end;
