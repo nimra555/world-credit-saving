@@ -1,0 +1,53 @@
+@font-face{
+    font-family: 'Avenir-Font';
+    src: url("../Avenir-Font/avenir_ff/AvenirLTStd-Roman.otf") format("opentype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir-Font" ;
+}
+body{
+    background-image: linear-gradient(#99cffe,#6b5959);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 70px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.main img{
+    margin-bottom: 50px;
+}
+.main h1{
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+.container p{
+    margin-top: 180px;
+    color: white;
+    font-size: 10px;
+    /* align-self: baseline; */
+}
+.container button{
+    align-self: flex-end;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 10px;
+}
