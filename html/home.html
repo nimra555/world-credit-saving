@@ -6,6 +6,7 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/0413a50a0f.js" crossorigin="anonymous"></script>
+    <!-- <script src="../js/map.js"></script> -->
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                 <h2>01</h2>
                 <hr>
                 <p>culture</p>
-                <button>Explore button</button>
+                <button onClick="location.href='./explore.html'">Explore</button>
             </div>
         </div>
         <div class="image-2">
@@ -45,7 +46,7 @@
                 <h2>02</h2>
                 <hr>
                 <p>sport</p>
-                <button>Explore button</button>
+                <button onClick="location.href='./explore.html'">Explore</button>
             </div>
         </div>
         <div class="image-3">
@@ -54,10 +55,16 @@
                 <h2>03</h2>
                 <hr>
                 <p>take action</p>
-                <button>Explore button</button>
+                <button onClick="location.href='./explore.html'">Explore</button>
             </div>
         </div>
     </section>
+
+    <!-- icon  -->
+    <div class="icon">
+        <img  onClick="loadResults()" src="../assets/icons/north_six_shooter.svg" alt="">
+
+    </div>
 </body>
 
 </html>
