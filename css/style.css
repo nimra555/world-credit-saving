@@ -65,43 +65,43 @@ body{
     align-items: center;
     justify-content: space-around;
     color: white;
-    padding-top: 20px;
+    padding: 20px 0px 20px;
+    flex-wrap: wrap;
 }
-.heading{
-    margin-top: 12px;
-    text-align: center;
-}
-.heading h1{
-    text-transform: capitalize;
-    padding-left: 100px;
+.logo{
+    align-items: center;
 }
 .logo img{
-    width: 100px;
+    width: 50px;
+}
+.heading{
+    align-items: center;    
+}
+.heading h3{
+    text-transform: capitalize;
 }
 .links ul{
     display: flex;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
+    text-transform: uppercase; 
+    align-items: center;
 }
 .links li{
     list-style: none;
-    padding: 8px;
+    padding: 4px;
+    font-size: 12px;
 }
-.links li img{
+.links  img{
     height: 20px;
 }
 #image-container{
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
+    align-items: center;
+    margin: 30px 0px;
 }
 #image-container  img{
     width: 300px;
     height: 400px;
-    /* max-width: 100%;
-    height: auto; */
 }
 .image-1 ,.image-2,.image-3{
     position: relative;
@@ -116,12 +116,24 @@ body{
     color: white;
     font-size: 50px;
     font-weight: bold;
-    /* border-bottom:  2px solid white; */
 }
 .text hr{
-    width: 100%;
+    width: 250px;
     border: 0;
     border-top: 2px solid white;
-    /* height: 5px; */
-   
+    height: 5px;
+}
+.text p{
+    color: white;
+    text-transform: capitalize;
+}
+.text button{
+    display: none;
+}
+.text:hover{
+    top: 50px;
+    cursor: pointer;
+}
+.text:hover button{
+    display: block;
 }
