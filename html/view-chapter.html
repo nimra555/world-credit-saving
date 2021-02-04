@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/0413a50a0f.js" crossorigin="anonymous"></script>
+    <script src="../js/view.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="../assets/logo/wcs.svg" alt="logo">
+        </div>
+        <div class="heading">
+           <a href="../assets/other-images/01_culture.jpg">Culture</a>
+           <a href="../assets/other-images/02_sport.jpg">Sports</a>
+           <a href="../assets/other-images/03_action.jpg">Take Action</a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li>view chapters</li>
+                <li><img src="../assets/icons/header_close.svg" onClick="location.href='./home.html'" id="menu-btn" alt="menu-icon"></li>
+            </ul>
+        </div>
+    </section>
+    <div class="wrapper">
+        <div class="images-container" id="slides">
+            <div class="col-1 carosel-image-visible">
+                <img src="../assets/other-images/01_culture.jpg" class="active" alt="">
+            </div>
+            <div class="col-1 carosel-image-visible">
+                <img src="../assets/other-images/11_escaping_places_intro.jpg" alt="">
+            </div>
+            <div class="col-1 carosel-image-visible">
+                <img src="../assets/other-images/12_living_museum_intro.jpg" alt="">
+            </div>
+            <div class="col-1 carosel-image-visible">
+                <img src="../assets/other-images/122_wolfman_panel.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/123_river_house_ruin.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/13_history_horse_back_intro.jpg" alt="">
+
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/02_sport.jpg" alt="">
+
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/21_north_6_shooter_climb.jpg" alt="">
+
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/22_bikepacking_lockheart_basin.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/23_indian_creek.jpg" alt="">
+            </div>
+            <div class="col-1">
+            <img src="../assets/other-images/24_trail_running_with_gods.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="../assets/other-images/03_action.jpg" alt="">
+            </div>
+                <div class="button-container">
+                    <div class="button-left">
+                        <button><i onclick="prev()" class="fas fa-arrow-circle-right" id="prev"  aria-label="previous"></i></button>
+                    </div>
+                    <div class="button-right">
+                        <button><i  onclick="next()" class="fas fa-arrow-circle-left" id="next" aria-label="previous"></i></button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
