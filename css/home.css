@@ -51,6 +51,7 @@ body{
     list-style: none;
     padding: 4px;
     font-size: 12px;
+    cursor: pointer;
 }
 .links  img,.explore-links img {
     height: 20px;
