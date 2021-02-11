@@ -40,11 +40,6 @@ body{
     color: white;
     font-size: 10px;
 }
-@media screen and (max-width: 425px){
-    .container p{
-        font-size: 7px;
-    }
-}
 .container button{
     align-self: flex-end;
     outline: none;
@@ -54,182 +49,45 @@ body{
     color: white;
     text-decoration: underline;
     font-size: 10px;
+    padding-right: 100px;
+}
+@media screen and (min-width: 1025px){
+    .container p{
+        font-size: 16px;
+    }
+    .container button{
+        font-size: 16px;
+        padding-right: 200px;
+        /* color: red; */
+    }
+}
+@media screen and (max-width: 768px){
+    .container p{
+        font-size: 15px;
+    }
+    .container button{
+        font-size: 16px;
+        padding-right: 150px;
+        /* color: green; */
+    }
+}
+@media screen and (max-width: 480px){
+    .container p{
+        font-size: 7px;
+    }
+    .container button{
+        font-size: 12px;
+        padding-right: 80px;
+        /* color: greenyellow; */
+    }
 }
 
 
-/* home page styling */
+   
+/* min width 320px max width 480px */
+  
 
-#header,#explore-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 20px 80px 20px;
-    flex-wrap: wrap;
-}
-.logo{
-    align-items: center;
-}
-.logo img{
-    width: 50px;
-}
-.heading{
-    align-items: center; 
-    text-align: center;   
-}
-.heading h3{
-    text-transform: capitalize;
-}
-.links ul,.explore-links ul{
-    display: flex;
-    text-transform: uppercase; 
-    align-items: center;
-}
-.links li i,.explore-links li i{
-    font-size: 12px;
-}
-.links li,.explore-links li{
-    list-style: none;
-    padding: 4px;
-    font-size: 12px;
-}
-.links  img,.explore-links img {
-    height: 20px;
-}
-.links img:hover{ 
-   transform: rotate(90deg);
-   transition: transform  1s linear 10ms;
-   cursor: pointer;
-}
-#image-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px 0px;
-}
-#image-container  img{
-    width: 300px;
-    height: 400px;
-}
-.image-1 ,.image-2,.image-3{
-    position: relative;
 
-}
-.text{
-    position: absolute;;
-    bottom: 20px;
-    left: 20px;
-    /* transform: translateY(-100px);
-    transition: 1s ease-in-out 50ms; */
-}
-.text h2{
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-}
-.text hr{
-    width: 250px;
-    border: 0;
-    border-top: 2px solid white;
-    height: 5px;
-}
-.text p{
-    color: white;
-    text-transform: capitalize;
-}
-.text button{
-    display: none;
-    border: none;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid white;
-    outline: none;
-    padding: 10px 18px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.text:hover{
-    transform: scale(1.4);
-    top: 50px;
-    transition:transform 2s ease;
-}
-.text:hover button{
-    display: block;
-}
-@media screen and (max-width: 770px){
-    #header{
-        padding: 20px 90px 20px;
-    }
-    .heading{
-        align-items: center;
-       margin-top: 30px; 
-        text-align: center;   
-    }
-    #image-container{
-        display: flex;
-        justify-content: center;
-        align-items: space-between;
-        margin: 10px 10px;
-        flex-wrap: wrap;
-    }
-    #image-container  img{
-        width: 200px;
-        height: 400px;
-        margin-left: 10px;
-    }
-    .text hr{
-        display: none;
-    }
-    
-}
-@media screen and (max-width: 425px){
-    #header{
-        padding: 20px 90px 20px;
-    }
-    .heading{
-        align-items: center;
-       margin-top: 30px; 
-        text-align: center;   
-    }
-    #image-container{
-        display: flex;
-        justify-content: center;
-        align-items: space-between;
-        margin: 10px 00px;
-        flex-wrap: wrap;
-    }
-    #image-container  img{
-        width: 300px;
-        height: 200px;
-    }
-    #header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        padding: 20px 0px 20px;
-        flex-wrap: wrap;
-    }
-    .heading{
-        padding-top: 50px;
-        text-align: center;
-    }
-}    
-
-.icon{
-    text-align: center;
-    cursor: pointer;
-}
-.icon img{
-    color: white;
-    border: 1px solid gray;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    background-color: gray;
-}
 
 /* explore */
 #explore-header{

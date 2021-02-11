@@ -1,0 +1,166 @@
+@font-face{
+    font-family: 'Avenir-Font';
+    src: url("../Avenir-Font/avenir_ff/AvenirLTStd-Roman.otf") format("opentype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir-Font" ;
+}
+body{
+    background-image: url("../assets/other-images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#header,#explore-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 80px 20px;
+    flex-wrap: wrap;
+}
+.logo{
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+}
+.heading{
+    align-items: center; 
+    text-align: center;  
+    word-spacing: 1.5px;
+    letter-spacing: 1.5px;
+}
+.heading h3{
+    text-transform: capitalize;
+}
+.links ul,.explore-links ul{
+    display: flex;
+    text-transform: uppercase; 
+    align-items: center;
+}
+.links li i,.explore-links li i{
+    font-size: 12px;
+}
+.links li,.explore-links li{
+    list-style: none;
+    padding: 4px;
+    font-size: 12px;
+}
+.links  img,.explore-links img {
+    height: 20px;
+}
+.links img:hover{ 
+   transform: rotate(90deg);
+   transition: transform  1s linear;
+   cursor: pointer;
+}
+.images-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+.images-container .col-1{
+    display: none;
+}
+.images-container .col-1 img{
+    max-width: 330px;
+    height: 500px;
+}
+.images-container .carosel-image-visible{
+    display: block;
+    position: relative;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.button-container i{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+.button-right{
+    margin-left: 1300px;
+}
+.button-left i{
+    display: none;
+}
+#header .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .heading a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+}
+#header .links li img{
+    height: 12px;
+}
+.text{
+    position: absolute;;
+    bottom: 20px;
+    left: 20px;
+}
+.text h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.text hr{
+    width: 250px;
+    border: 0;
+    border-top: 2px solid white;
+    height: 5px;
+}
+.text p{
+    color: white;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px){
+    .images-container{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0px;
+        padding:0px 10px;
+    }
+    .images-container .col-1 img{
+        max-width: 300px;
+        height: 500px;
+        padding: 10px;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .images-container{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+        flex-direction: column;
+    }
+    .images-container .col-1 img{
+        width: 500px;
+        height: 200px;
+        padding: 10px;
+        flex: 1;
+    }
+}

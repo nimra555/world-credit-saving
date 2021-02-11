@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
     <script src="https://kit.fontawesome.com/0413a50a0f.js" crossorigin="anonymous"></script>
     <!-- <script src="../js/map.js"></script> -->
 </head>
@@ -12,17 +12,20 @@
 <body>
     <section id="header">
         <div class="logo">
-            <img src="../assets/logo/wcs.svg" alt="logo">
+            <img onClick="location.href='../index.html'" src="../assets/logo/wcs.svg"  alt="logo">
         </div>
         <div class="heading">
-            <h3>world credit savings</h3>
-            <h6>LTD.</h6>
+            <h3>world credit savings
+                <br>
+                LTD.
+            </h3>
+            <!-- <h6>LTD.</h6> -->
         </div>
         <div class="links">
             <ul>
                 <li><i class="fab fa-facebook-square"></i></li>
                 <li><i class="fab fa-twitter"></i></li>
-                <li>view chapters</li>
+                <li onClick="location.href='./view-chapter.html'">view chapters</li>
                 <li><img onClick="location.href='./view-chapter.html'" src="../assets/icons/hamburger_short.svg" id="menu-btn" alt="menu-icon"></li>
             </ul>
         </div>
@@ -62,7 +65,7 @@
 
     <!-- icon  -->
     <div class="icon">
-        <img  onClick="loadResults()" src="../assets/icons/north_six_shooter.svg" alt="">
+        <img onClick="location.href='./map.html'" src="../assets/icons/north_six_shooter.svg" alt="">
 
     </div>
 </body>
